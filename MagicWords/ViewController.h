@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@import QuartzCore ;
 
+@interface ViewController : UIViewController
+{
+    CALayer *_animationLayer;
+    CAShapeLayer *_pathLayer;
+    CALayer *_penLayer;
+}
+
+@property (nonatomic, retain) CALayer *animationLayer;
+@property (nonatomic, retain) CAShapeLayer *pathLayer;
 
 @end
 
